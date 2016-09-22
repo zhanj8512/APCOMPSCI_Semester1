@@ -1,5 +1,5 @@
-//import scanner
-import java.util.Scanner;
+import java.util.Scanner; //import Statement
+
 public class Lab_04ex1
 {
 	public static void main(String[]args)
@@ -10,28 +10,33 @@ public class Lab_04ex1
 		Scanner kb = new Scanner(System.in);
 		
 		//3 sets of variables - 1 for each item
-		System.out.println("Pleas enter item1: ");
+		System.out.println("Please enter item1: ");
 		String item1 = kb.nextLine();
 		System.out.println("Please enter price: ");
 		double price1 = kb.nextDouble();
+		kb.nextLine();
 		
 		System.out.println("Please enter item2: ");
 		String item2 = kb.nextLine();
 		System.out.println("Please enter price: ");
 		double price2 = kb.nextDouble();
+		kb.nextLine();
 		
 		System.out.println("Please enter item3: ");
 		String item3 = kb.nextLine();
 		System.out.println("Please enter price: ");
 		double price3 = kb.nextDouble();
+		kb.nextLine();
 		
 		
 		System.out.println("<<<<<<<receipt>>>>>>>");
-		//do this for all 3 items
+		
 		receipt.format(item1, price1);
+		receipt.format(item2, price2);
+		receipt.format(item3, price3);
 		
 		
-		//calculate subtotal, tax, total
+		
 		double subtotal = (price1+ price2 + price3);
 		receipt.format("Subtotal: ", subtotal);
 		//do the same thing for tax and total
@@ -42,8 +47,7 @@ public class Lab_04ex1
 	{
 		//formatting statement goes here
 		//use item and price in your format
-		System.out.printf("%10s  %10.2f", "price");
-		System.out.printf("%10s  %10.2f", "item");
+		System.out.printf("%10s  %10.2f\n", item, price);
 	}
 }
 		
