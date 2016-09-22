@@ -15,7 +15,7 @@ public class Lab_03ex2
 	double weight = keyboard.nextDouble();
 	
 	double bmi = (weight*703/height*height);
-	System.out.println(bmi);
+	System.out.println("Your BMI is"+" "+bmi);
 	
 	}
 	
