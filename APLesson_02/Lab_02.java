@@ -17,7 +17,7 @@ public class Lab_02
 		
 		System.out.println(name +"\n"+num +"\t"+street + "\n" + city+"\t"+ zip);
 		
-		int num1 = 3;
+		int num1 = 5;
 		int num2 = 5;
 		
 		System.out.println(num1+" " + "multipled by" + " "+num2+" " + "is" + " " + num1*num2);
