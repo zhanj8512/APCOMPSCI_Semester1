@@ -10,7 +10,7 @@ public class Lesson_04
 		form.format(word1, number1);
 		
 		String word2 = "Mayo";
-		double number2 = 2.7;
+		double number2 = 2.9;
 		form.format(word2, number2);
 	
 		
