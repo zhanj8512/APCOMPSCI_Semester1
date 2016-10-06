@@ -14,7 +14,7 @@ public class Lab_03ex2
 	System.out.println("What is your weight in pounds?");
 	double weight = keyboard.nextDouble();
 	
-	double bmi = (weight*703/height*height);
+	double bmi = (weight*703)/(height*height);
 	System.out.println("Your BMI is"+" "+bmi);
 	
 	}
