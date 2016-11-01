@@ -46,7 +46,7 @@ public class Lab_05_2
 	{
 		if (subtotal >= 2000)
 			return subtotal * 0.15;
-		return 0.0;
+		`return 0.0;
 	}
 	
 	public static void format(String item, double price)
