@@ -6,7 +6,7 @@ public class reversenumber
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a number:");
 		int num = kb.nextInt();
-		System.out.println(num + "reversed is " + getReverse(num));
+		System.out.println(num + " reversed is " + getReverse(num));
 		
 	}
 	

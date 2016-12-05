@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+import java.util.
+=======
 import java.util.Scanner;
 public class underscores
 {
@@ -8,3 +11,4 @@ public class underscores
         
     }  
 }   
+>>>>>>> origin/master
