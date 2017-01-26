@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=milesperhour()
+comment1.params=dis\ hrs\ min
+comment1.target=milesperhour(int,\ int,\ int)
+comment2.params=dis
+comment2.target=void\ setDistance(int)
+comment3.params=hrs
+comment3.target=void\ setHours(int)
+comment4.params=min
+comment4.target=void\ setMinutes(int)
+comment5.params=
+comment5.target=void\ setMph()
+comment6.params=
+comment6.target=int\ getDis()
+comment7.params=
+comment7.target=int\ getHrs()
+comment8.params=
+comment8.target=int\ getMin()
+comment9.params=
+comment9.target=double\ calcmph()
+numComments=10
