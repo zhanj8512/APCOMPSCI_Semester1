@@ -14,7 +14,7 @@ public class cardriver
 		System.out.print("tires: ");
 		String t = kb.next();
 		
-		car car1 = new car(p, i, e, t);
-		System.out.print("Your vehicle is ready......\nPaint:\t" + car1.getpaint() + "\nInterior:\t" + car1.getinterior() + "\nEngine:\t" +  car1.getEngine() + "\nTires:\t" + car1.getTires());
+		carclass Car = new carclass(p, i, e, t);
+		System.out.print("Your vehicle is ready......\nPaint:\t" + Car.getPaint() + "\nInterior:\t" + Car.getInterior() + "\nEngine:\t" +  Car.getEngine() + "\nTires:\t" + Car.getTires());
 	}
 }

@@ -1,4 +1,5 @@
 public class human
+publix static void main(String[]args)
 {
 	private String hair, eyes, skin;
 	

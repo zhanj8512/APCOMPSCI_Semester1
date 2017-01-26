@@ -2,7 +2,7 @@ public class carclass
 {
 	private String paint, interior, engine, tires;
 	
-	public Car()
+	public carclass()
 	{
 		paint = "";
 		interior = "";
@@ -10,7 +10,7 @@ public class carclass
 		tires = "";
 	}
 	
-	public Car(String p, String i, String e, String t)
+	public carclass(String p, String i, String e, String t)
 	{
 		paint = p;
 		interior = i;

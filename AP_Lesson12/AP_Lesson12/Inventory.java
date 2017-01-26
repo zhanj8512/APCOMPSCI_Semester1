@@ -34,7 +34,7 @@ public class Inventory
 		
 		Inventory item1;
 		
-		System.out.println("Would you like to enter category and price information?");
+		System.out.println("Do you want to enter your price and information? Answer y");
 		String catAndPrice = kb.next();
 		
 		if (catAndPrice.equals("n"))

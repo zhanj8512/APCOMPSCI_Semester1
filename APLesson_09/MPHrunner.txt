@@ -11,9 +11,9 @@ public class MPHRunner
 		System.out.println("Minutes: ");
 		int minutes = kb.nextInt();
 		
-		milesperhour object = new milesperhour(distance, hours, minutes);
+		MilesPerHour object = new MPH(distance, hours, minutes);
 		
-		System.out.println(object.getDis() + " miles in " + object.getHrs() + " hours and " + object.getMin() + " minutes = " + object.calcmph() + " mph");
+		System.out.println(object.getdistance() + " miles in " + object.gethours() + " hours and " + object.getminutes() + " minutes = " + object.getMilesPerHour() + " mph");
 		
 		
 	}
