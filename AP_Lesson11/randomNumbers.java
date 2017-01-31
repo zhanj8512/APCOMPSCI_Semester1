@@ -7,7 +7,7 @@ public class randomNumbers
 		{
 			for (int b = 0; b < nums[a].length; b++)
 			{
-				nums[a][b] = (int)((Math.random()*20));
+				nums[a][b] = (int)(Math.random() * 100 + 1);
 			}
 		}
 		for (int a = 0; a < nums.length; a++)
@@ -16,7 +16,7 @@ public class randomNumbers
 			{
 				System.out.print(nums[a][b] + "\t");
 			}
-			System.out.println("");
+			System.out.println();
 		}
 	}
 }
