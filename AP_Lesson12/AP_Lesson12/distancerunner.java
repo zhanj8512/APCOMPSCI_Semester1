@@ -20,3 +20,4 @@ public class distancerunner
 		System.out.println("distance  =  " + object.getdistance());
 	}
 }
+
