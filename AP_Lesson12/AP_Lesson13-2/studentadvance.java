@@ -17,6 +17,6 @@ public class studentadvance extends advance
 	
 	public String toString()
 	{
-		return super.toString() + "\nstudent ID Required)";
+		return super.toString() + "\nstudent ID needed)";
 	}
 }
