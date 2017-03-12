@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=advance()
+comment1.params=days
+comment1.target=advance(int)
+comment2.params=
+comment2.target=double\ getPrice()
+numComments=3

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=studentadvance()
+comment1.params=days
+comment1.target=studentadvance(int)
+comment2.params=
+comment2.target=double\ getPrice()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
