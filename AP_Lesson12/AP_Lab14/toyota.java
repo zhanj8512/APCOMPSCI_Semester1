@@ -1,6 +1,7 @@
 public class toyota implements location
 {
-	private double[] location = new double[2];
+	private double x, y;
+	private double [] location;
 	
 	public toyota (String lo)
 	{
