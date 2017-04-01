@@ -14,20 +14,20 @@ public class satellite
 
 
         String printout = "\n\n" +
-               "==========================" + "\nStarting locations.....";
+               "==========================" + "\nstarting locations.....";
 
 
-        for (Location l : locate)
+        for (location l : locate)
         {
             printout += "\nLocation for " + l.getID() + ": (" + getLocation(l.getLoc()) + ")";
         }
 
 
         printout += "\n\n" + "==========================" +
-                   "\nDistance from home...";
+                   "\ndistance from home...";
 
 
-        for (Location l : locate)
+        for (location l : locate)
         {
             printout += "\nDistance for " + l.getID() + ": (" + getDistance(l.getLoc(), home)+ ")";
         }
@@ -39,7 +39,7 @@ public class satellite
 
     public static double getDistance(double[] car, double[] home)
     {
-        return Math.sqrt((Math.pow(car[0] - home[0], 2)+ Math.pow(car[1] - home[1], 2)));
+         return Math.sqrt((Math.pow(car[0] - home[0], 2)+ Math.pow(car[1] - home[1], 2)));
     }
 
 

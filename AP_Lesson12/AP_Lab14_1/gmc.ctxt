@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=gmc()
+comment1.params=x\ y
+comment1.target=gmc(double,\ double)
+comment2.params=
+comment2.target=int\ getid()
+comment3.params=x\ y
+comment3.target=void\ move(double,\ double)
+comment4.params=
+comment4.target=double[]\ getloc()
+numComments=5
