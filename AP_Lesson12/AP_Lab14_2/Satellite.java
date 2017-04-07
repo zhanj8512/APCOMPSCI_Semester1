@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Satellite
+public class satellite
 {
    public static void main(String[]args)
    {
