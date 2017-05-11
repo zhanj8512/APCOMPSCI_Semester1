@@ -1,12 +1,12 @@
-public class playstation extends console {
+public class PlayStation extends Console {
 	public String platform;
 	public int serialNo;
 	
-	public playstation() {
+	public PlayStation() {
 		super();
 	}
 	
-	public playstation(String p) {
+	public PlayStation(String p) {
 		super(p);
 	}
 	

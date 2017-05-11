@@ -12,7 +12,7 @@ public abstract class car implements location
     
     public int getid()
     {
-        return (int)(Math.random()*999999)+1;
+        return id;
     }
    
     public void move (double x, double y)

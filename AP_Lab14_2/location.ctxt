@@ -3,6 +3,6 @@ comment0.params=
 comment0.target=double[]\ getloc()
 comment1.params=
 comment1.target=int\ getid()
-comment2.params=j\ z
+comment2.params=x\ y
 comment2.target=void\ move(double,\ double)
 numComments=3

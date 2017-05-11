@@ -1,12 +1,12 @@
-public class pc extends gamesystem{
+public class PC extends GameSystem{
 	public String platform;
 	public int serialNo;
 	
-	public pc() {
+	public PC() {
 		super();
 	}
 	
-	public pc(String p) {
+	public PC(String p) {
 		super(p);
 	}
 	

@@ -1,12 +1,12 @@
-public abstract class gamesystem {
+public abstract class GameSystem {
 	public String platform;
 	public int serialNo;
 	
-	public gamesystem() {
+	public GameSystem() {
 		platform = "";
 	}
 	
-	public gamesystem(String p) {
+	public GameSystem(String p) {
 		platform = p;
 		serialNo = (int)(Math.random() * 1000000);
 	}

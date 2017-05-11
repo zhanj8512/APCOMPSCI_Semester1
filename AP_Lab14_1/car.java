@@ -1,13 +1,13 @@
 public abstract class car implements location
 {
     public double[] location = new double [2];
-    private int id = (int)(Math.random()*999999)+1;
+    private int id;
     
     
     public car()
     {
-        
-        id = (int)(Math.random()*999999)+1;
+        id = (int)(Math.random()* 900000)+100000;
+        location = new double [2];
     }
     
     public int getid()
@@ -15,5 +15,13 @@ public abstract class car implements location
         return id;
     }
     
-    public abstract void move (double x, double y);
+    public void move (double x, double y)
+    {
+        location[0] +=x;
+        location[1] +=y;
+    }
+    public double[] getloc()
+    {
+        return location;
+    }
 }
