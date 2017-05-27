@@ -59,7 +59,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
   private JMenuItem fifty;
   /** 75% zoom level */
   private JMenuItem seventyFive;
-  /** 100% zoom level */
+  /** 100% zoom level */ 
   private JMenuItem hundred;
   /** 150% zoom level */
   private JMenuItem hundredFifty;
