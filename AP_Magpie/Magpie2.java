@@ -77,14 +77,11 @@ public class Magpie2
 	{
 		/* New String variable phrase = a more searchable version of statement.
 		 	-Use a combination of trim() and toLowerCase() modify statement.
-
 		   New int variable psn = the location of goal in phrase after
 		   startPos
-
 			-->Refinement: Make sure we find goal by itself, and not part
 			of another word ("no" vs no in "know"). if you find an occurrence
 			of goal, make sure before and after aren't letters.
-
 			As long as psn >= 0...
 				Check if psn > 0 - there is no need to check for before at the
 				beginning of the word
@@ -101,7 +98,6 @@ public class Magpie2
 				/* if before and after are not letters (compare before to "a"
 					and after to "z")
 						--return psn
-
 				Otherwise, search for goal in phrase from psn + 1 forward */
 			
 				String phrase = statement.trim().toLowerCase();

@@ -97,10 +97,48 @@ public class Picture extends SimplePicture
       }
     }
   }
+  public void keepOnlyBlue()
+  {
+      Pixel[][]Pixels = this.getPixels2D();
+      for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(0);
+		pixelObj.setGreen(0);
+      }
+    }
+      
+    }
+    public void negate()
+  {
+        Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(255 - pixelObj.getRed());
+		pixelObj.setGreen(255 - pixelObj.getGreen());
+		pixelObj.setBlue(255 - pixelObj.getBlue());
+      }
+    }
+  }
+  public void grayScale()
+  {
+      Pixel[][] pixels = this.getPixels2D();
+	for (Pixel[] rowArray : pixels)
+	{
+		for (Pixel pixelObj : rowArray)
+		{
+			int avg = (pixelObj.getBlue() + pixelObj.getRed() + pixelObj.getGreen())/3;
+			pixelObj.setBlue(avg);
+			pixelObj.setRed(avg);
+			pixelObj.setGreen(avg);
+		}
+	}
+
+  }
   
-  /** Method that mirrors the picture around a 
-    * vertical mirror in the center of the picture
-    * from left to right */
   public void mirrorVertical()
   {
     Pixel[][] pixels = this.getPixels2D();
@@ -184,6 +222,7 @@ public class Picture extends SimplePicture
           }
       }
   }
+  
   
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
@@ -338,7 +377,7 @@ public class Picture extends SimplePicture
       this.copy(arch,200,0);
       this.write("collage.jpg");
       platypus.zeroBlue();
-      gorge.grayscale();
+      gorge.mirrorHorizontal();
       arch.negate();
       this.mirrorVertical();
       
@@ -370,6 +409,49 @@ public class Picture extends SimplePicture
       }
     }
   }
+   public void edgeDetection2(int edgeDist)
+ {
+       Picture pic = new Picture(this);
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    Pixel[][] pixels = this.getPixels2D();
+    Color rightColor = null;
+    for (int row = 0; row < pixels.length; row++)
+    {
+      for (int col = 0; 
+           col < pixels[0].length-1; col++)
+      {
+        leftPixel = pixels[row][col];
+        rightPixel = pixels[row][col+1];
+        rightColor = rightPixel.getColor();
+        if (leftPixel.colorDistance(rightColor) > edgeDist)
+		{
+			leftPixel.setColor(Color.BLACK);
+		}
+        else
+		{
+			leftPixel.setColor(Color.WHITE);
+		}
+      }
+    }
+	Pixel[][] picPixels = pic.getPixels2D();
+	Pixel topPixel = null;
+	Pixel botPixel = null;
+	Color botColor = null;
+ 	for (int row = 0; row < picPixels.length-1; row++)
+	{
+		for (int col = 0; col < picPixels[0].length; col++)
+		{
+			topPixel = picPixels[row][col];
+			botPixel = picPixels[row+1][col];
+			botColor = botPixel.getColor();
+			if (topPixel.colorDistance(botColor) > edgeDist)
+			{
+				pixels[row][col].setColor(Color.BLACK);
+			}
+		}
+	}
+ }
   
   
   /* Main method for testing - each class in Java can have a main 
